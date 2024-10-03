@@ -20,17 +20,17 @@ if __name__ == '__main__':
         exit(1)
 
     solutions = []
-    placed_queens = []
+    placed_queens = []  # coordinates format [row, column]
     stop = False
     r = 0
     c = 0
 
-    # iterate through rows
+    # iterate thru rows
     while r < n:
         goback = False
-        # iterate through columns
+        # iterate thru columns
         while c < n:
-            # check if current column is safe
+            # check is current column is safe
             safe = True
             for cord in placed_queens:
                 col = cord[1]
